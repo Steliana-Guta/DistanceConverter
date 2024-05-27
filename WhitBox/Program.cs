@@ -23,7 +23,7 @@ namespace DistanceConverter
             distanceUnit currentUnit, desiredUnit;
 
             Console.WriteLine("Distance Conversion Utility");
-            Console.WriteLine("Please choose the units you are using to start with");
+            Console.WriteLine("Please choose the unit you are using to start with");
 
             currentUnit = DistanceMenu();
 
@@ -31,7 +31,7 @@ namespace DistanceConverter
             userResponse = Console.ReadLine();
             distance = Convert.ToSingle(userResponse);
 
-            Console.WriteLine("Please choose the units you wish to convert to");
+            Console.WriteLine("Please choose the unit you wish to convert to");
             desiredUnit = DistanceMenu();
 
             switch (currentUnit)
@@ -74,7 +74,6 @@ namespace DistanceConverter
                 //Assume a valid response
 
                 //print a menu
-                Console.WriteLine("Program Menu: Please select one of the following options");
                 Console.WriteLine("M) Distance in miles");
                 Console.WriteLine("K) Distance in kilometres");
                 Console.WriteLine("A) Distance in astronomical units");
